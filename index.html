@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>名古屋駅 地下鉄マップ</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名古屋地下鉄路線図</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>名古屋駅 地下鉄マップ</h1>
-  <div class="map-container">
-    <img src="assets/map.png" alt="名古屋駅地下鉄マップ" class="map-image">
+    <h1>名古屋地下鉄路線図</h1>
+    <div id="main-content">
+        <div id="map-container">
+            <img src="map.png" alt="Subway Map">
+        </div>
+        <div id="station-info">
+            <p>駅をクリックすると詳細が表示されます。</p>
+        </div>
+    </div>
 
-    <!-- 駅ボタン -->
-    <button class="station" id="nagoya" style="top: 200px; left: 220px;">名古屋</button>
-    <button class="station" id="sakae" style="top: 180px; left: 400px;">栄</button>
-    <button class="station" id="kanayama" style="top: 260px; left: 500px;">金山</button>
-  </div>
-
-  <div id="station-info" class="info-box">
-    駅をクリックすると情報が表示されます。
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

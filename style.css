@@ -1,52 +1,49 @@
-body {
-    font-family: sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 20px;
+    font-family: sans-serif;
     background-color: #f0f0f0;
+}
+
+body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* Prevent body scroll when map container is scrolled */
-    overflow: hidden;
-    height: 100vh;
-    box-sizing: border-box;
 }
 
 h1 {
     text-align: center;
     flex-shrink: 0;
+    margin: 15px 0;
+}
+
+#main-content {
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden; /* Prevent entire page from scrolling */
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
 }
 
 #map-container {
+    flex: 3; /* Takes 3/4 of the space */
     position: relative;
-    /* Let the container take up available space */
-    width: 100%;
-    height: 100%;
     border: 1px solid #ccc;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     overflow: auto; /* Make the container scrollable */
+    margin-right: 20px;
 }
 
 #map-container img {
     display: block;
-    /* The image is now displayed at its natural size inside the scrollable container */
     cursor: pointer;
 }
 
 #station-info {
-    display: none; /* Initially hidden */
-    position: fixed; /* Use fixed positioning */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
+    flex: 1; /* Takes 1/4 of the space */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    max-width: 300px;
-    width: 80%;
-    z-index: 10;
-    border: 1px solid #ddd;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 #station-info h3 {
@@ -55,6 +52,5 @@ h1 {
 }
 
 #station-info p {
-    margin-bottom: 0;
     color: #555;
 }
