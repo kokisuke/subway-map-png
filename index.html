@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>名古屋地下鉄 路線図（PNG版）</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>名古屋地下鉄 路線図（PNG版・クリック可）</h1>
+
+  <div class="map-container">
+    <img src="assets/map.png" alt="名古屋地下鉄 路線図" usemap="#nagoyaMap" class="map-image">
+
+    <map name="nagoyaMap">
+      <area shape="circle" coords="350,450,20" href="#" alt="名古屋" data-name="名古屋駅">
+      <area shape="circle" coords="450,450,20" href="#" alt="伏見" data-name="伏見駅">
+      <area shape="circle" coords="550,450,20" href="#" alt="栄" data-name="栄駅">
+      <area shape="circle" coords="700,700,20" href="#" alt="金山" data-name="金山駅">
+      <area shape="circle" coords="800,400,20" href="#" alt="本山" data-name="本山駅">
+    </map>
+  </div>
+
+  <div id="station-info">
+    <h2 id="station-name">駅をクリックしてください</h2>
+    <p id="station-detail">ここに駅の情報が表示されます。</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
