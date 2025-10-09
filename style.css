@@ -6,29 +6,36 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* Prevent body scroll when map container is scrolled */
+    overflow: hidden;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 h1 {
     text-align: center;
+    flex-shrink: 0;
 }
 
 #map-container {
     position: relative;
-    max-width: 100%;
+    /* Let the container take up available space */
+    width: 100%;
+    height: 100%;
     border: 1px solid #ccc;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: auto; /* Make the container scrollable */
 }
 
 #map-container img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    /* The image is now displayed at its natural size inside the scrollable container */
     cursor: pointer;
 }
 
 #station-info {
     display: none; /* Initially hidden */
-    position: absolute;
+    position: fixed; /* Use fixed positioning */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

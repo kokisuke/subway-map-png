@@ -31,7 +31,7 @@ mapContainer.addEventListener('click', (event) => {
 });
 
 function findClickedStation(x, y) {
-    const clickRadius = 15; // クリック判定の半径（ピクセル単位）
+    const clickRadius = 30; // クリック判定の半径（ピクセル単位）
     return stations.find(station => {
         const distance = Math.sqrt(Math.pow(station.x - x, 2) + Math.pow(station.y - y, 2));
         return distance < clickRadius;
