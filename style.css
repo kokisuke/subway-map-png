@@ -1,0 +1,51 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: #0f1724;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.map-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.map-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+#station-info {
+  margin-top: 20px;
+  background: rgba(255,255,255,0.05);
+  padding: 16px;
+  border-radius: 10px;
+  width: 80%;
+  margin-inline: auto;
+}
+
+#station-name {
+  font-size: 22px;
+  color: #06b6d4;
+}
+
+#station-detail {
+  color: #ccc;
+}
+
+@media (max-width: 600px) {
+  #station-info {
+    width: 95%;
+  }
+}
