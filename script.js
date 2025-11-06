@@ -7,12 +7,12 @@ mapImage.onload = () => {
     const stations = [
         { name: '名古屋', x: 534, y: 960, lines: ['東山線', '桜通線'], details: 'JR線、名鉄線、近鉄線との乗り換えが可能です。' },
         { name: '伏見', x: 719, y: 1054, lines: ['東山線', '鶴舞線'], details: '鶴舞線との乗り換えが可能です。' },
-        { name: '栄', x: 902, y: 1054, lines: ['東山線', '名城線'], details: '名鉄瀬戸線（栄町駅）との乗り換えが可能です。' }
-        { name: '丸の内', x: 770, y: 896, lines: ['桜通線', '鶴舞線'], details: '' }
-        { name: '久屋大通', x: 956, y: 896, lines: ['桜通線', '名城線'], details: '' }
-        { name: '上前津', x: 951, y: 1308, lines: ['鶴舞線', '名城線'], details: '' }
-        { name: '今池', x: 1246, y: 1054, lines: ['東山線', '桜通線'], details: '' }
-        { name: '御器所', x: 1246, y: 1308, lines: ['桜通線', '鶴舞線'], details: '' }
+        { name: '栄', x: 902, y: 1054, lines: ['東山線', '名城線'], details: '名鉄瀬戸線（栄町駅）との乗り換えが可能です。' },
+        { name: '丸の内', x: 770, y: 896, lines: ['桜通線', '鶴舞線'], details: '' },
+        { name: '久屋大通', x: 956, y: 896, lines: ['桜通線', '名城線'], details: '' },
+        { name: '上前津', x: 951, y: 1308, lines: ['鶴舞線', '名城線'], details: '' },
+        { name: '今池', x: 1246, y: 1054, lines: ['東山線', '桜通線'], details: '' },
+        { name: '御器所', x: 1246, y: 1308, lines: ['桜通線', '鶴舞線'], details: '' },
         
         
     ];
